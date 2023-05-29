@@ -83,7 +83,11 @@ class BurgerBuilder extends Component{
         return(
             <Auxiliary>
                 <Modal show={this.state.purchasing} closeModal={this.closeModal}>
-                    <OrderSummary ingredients={this.state.ingredients} continueClick={this.continuePurchase} cancelClick={this.cancelPurchase}/></Modal>
+                    <OrderSummary 
+                        ingredients={this.state.ingredients} 
+                        continueClick={this.continuePurchase}
+                        cancelClick={this.cancelPurchase}
+                        price={this.state.totalPrice.toFixed(2)}/></Modal>
                 <div><Burger ingredients={this.state.ingredients}/></div>
                 <div>
                     <BuildControls 
