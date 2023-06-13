@@ -19,7 +19,7 @@ controls.map(ctrl => <BuildControl key={ctrl.label} label={ctrl.label} ingredien
                             ingredientRemoved={() => props.removeIngredient(ctrl.type)} disableBtn={props.disableBtnInfo[ctrl.type]}/>) 
                             
 }
-<button className={classes.OrderButton} disabled={!props.purchaseable}>ORDER NOW</button>
+<button className={classes.OrderButton} disabled={!props.purchaseable} onClick={props.showOrder}>ORDER NOW</button>
 </div>;
 
 }
