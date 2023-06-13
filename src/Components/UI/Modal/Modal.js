@@ -1,9 +1,10 @@
 import React from "react";
 import classes from "./Modal.css";
 import Auxiliary from "../../../hoc/Auxiliary";
-import Backdrop from "../Backdrop/Backdrop"
+import Backdrop from "../Backdrop/Backdrop";
 
 const modal = (props) =>{
+
     return(
         <Auxiliary>
             <Backdrop show={props.show} clicked={props.closeModal} />
